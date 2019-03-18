@@ -64,4 +64,16 @@ create_country_leader = {
 	ideology = classical_conservativism_subtype
 	traits = { }
 }
-
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = JER
+		autonomous_state = autonomy_4
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = JER
+	}
+}
